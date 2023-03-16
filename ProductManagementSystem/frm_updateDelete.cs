@@ -37,6 +37,10 @@ namespace ProductManagementSystem
             Adaptee adaptee = new Delete();
             ITarget target = new Adapter(adaptee);
             target.getRequest(tb_id.Text, tb_productName.Text, cbox_productType.Text, decimal.Parse(tb_price.Text));
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
+
         }
 
         private void btn_showProduct_Click(object sender, EventArgs e)

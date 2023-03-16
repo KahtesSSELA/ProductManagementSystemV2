@@ -18,7 +18,7 @@ namespace ProductManagementSystem.AdapterPattern
     public class Insert : Adaptee
     {
         private SqlCommand cmd;
-        SqlConnection sqlCon = new SqlConnection("Data Source=(localdb)\\local;Initial Catalog=Product;Integrated Security=True");
+        SqlConnection sqlCon = new SqlConnection("Data Source=LAPTOP-C1548M6R\\SQLEXPRESS;Initial Catalog=Product;Integrated Security=True");
         public override void request(string id, string name, string prodtype, decimal price)
         {
             try
@@ -46,7 +46,7 @@ namespace ProductManagementSystem.AdapterPattern
     public class Update :Adaptee
     {
         private SqlCommand cmd;
-        SqlConnection sqlCon = new SqlConnection("Data Source=(localdb)\\local;Initial Catalog=Product;Integrated Security=True");
+        SqlConnection sqlCon = new SqlConnection("Data Source=LAPTOP-C1548M6R\\SQLEXPRESS;Initial Catalog=Product;Integrated Security=True");
         public override void request(string id, string name, string prodtype, decimal price)
         {
             try
@@ -73,12 +73,12 @@ namespace ProductManagementSystem.AdapterPattern
     public class Delete :Adaptee
     {
         private SqlCommand cmd;
-        SqlConnection sqlCon = new SqlConnection("Data Source=(localdb)\\local;Initial Catalog=Product;Integrated Security=True");
+        SqlConnection sqlCon = new SqlConnection("Data Source=LAPTOP-C1548M6R\\SQLEXPRESS;Initial Catalog=Product;Integrated Security=True");
         public override void request(string id, string name, string prodtype, decimal price)
         {
             try
             {
-                sqlCon = new SqlConnection("Data Source=(localdb)\\local;Initial Catalog=Product;Integrated Security=True");
+                sqlCon = new SqlConnection("Data Source=LAPTOP-C1548M6R\\SQLEXPRESS;Initial Catalog=Product;Integrated Security=True");
                 cmd = new SqlCommand(@"delete Product2 where ProductID=@ID", sqlCon);
 
                 cmd.CommandType = CommandType.Text;

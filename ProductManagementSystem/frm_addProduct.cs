@@ -101,6 +101,9 @@ namespace ProductManagementSystem
                     MessageBox.Show("Choose Product Type");
                     break;
             }
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
     }
 }

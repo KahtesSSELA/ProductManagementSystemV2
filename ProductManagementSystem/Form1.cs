@@ -23,7 +23,7 @@ namespace ProductManagementSystem
         }
 
         private SqlCommand cmd;
-        SqlConnection sqlCon = new SqlConnection("Data Source=(localdb)\\local;Initial Catalog=Product;Integrated Security=True");
+        SqlConnection sqlCon = new SqlConnection("Data Source=LAPTOP-C1548M6R\\SQLEXPRESS;Initial Catalog=Product;Integrated Security=True");
         SqlDataAdapter adapt;
 
 

@@ -81,6 +81,8 @@ namespace ProductManagementSystem
             updateDelete.Show();
             this.Hide();
         }
+        public List<string> names = new List<string>();
+        public List<string> prices = new List<string>();
 
         private void btn_addTOCart_Click(object sender, EventArgs e)
         {
@@ -88,8 +90,20 @@ namespace ProductManagementSystem
             string name = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
             string prodtype = this.dataGridView1.CurrentRow.Cells[3].Value.ToString();
             decimal price = decimal.Parse(this.dataGridView1.CurrentRow.Cells[2].Value.ToString());
-            Cart cart = new Cart(id,name,prodtype,price);
-            
+           
+            names.Add(name);
+            prices.Add(price.ToString());
+        }
+
+        private void btn_ShowCart_Click(object sender, EventArgs e)
+        {
+            frm_Cart cart = new frm_Cart();
+
+            cart.productName = names;
+            cart.productPrice = prices;
+
+            this.Hide();
+            cart.Show();
         }
     }
 }

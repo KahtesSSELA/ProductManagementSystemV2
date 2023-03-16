@@ -52,7 +52,6 @@ namespace ProductManagementSystem
             switch (cbox_productType.Text)
             {
                 case "Kilo Product":
-                    
                     builder = new KiloProduct(tb_id.Text,tb_productName.Text,int.Parse(tb_price.Text));
                     manufacturer.Build(builder);
                     break;

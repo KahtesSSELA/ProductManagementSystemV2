@@ -32,6 +32,7 @@
             this.btn_addProduct = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_addTOCart = new System.Windows.Forms.Button();
+            this.btn_ShowCart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,11 +76,22 @@
             this.btn_addTOCart.UseVisualStyleBackColor = true;
             this.btn_addTOCart.Click += new System.EventHandler(this.btn_addTOCart_Click);
             // 
+            // btn_ShowCart
+            // 
+            this.btn_ShowCart.Location = new System.Drawing.Point(351, 415);
+            this.btn_ShowCart.Name = "btn_ShowCart";
+            this.btn_ShowCart.Size = new System.Drawing.Size(75, 23);
+            this.btn_ShowCart.TabIndex = 2;
+            this.btn_ShowCart.Text = "Show Cart";
+            this.btn_ShowCart.UseVisualStyleBackColor = true;
+            this.btn_ShowCart.Click += new System.EventHandler(this.btn_ShowCart_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 450);
+            this.Controls.Add(this.btn_ShowCart);
             this.Controls.Add(this.btn_addTOCart);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_addProduct);
@@ -98,6 +110,7 @@
         private System.Windows.Forms.Button btn_addProduct;
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btn_addTOCart;
+        private System.Windows.Forms.Button btn_ShowCart;
     }
 }
 

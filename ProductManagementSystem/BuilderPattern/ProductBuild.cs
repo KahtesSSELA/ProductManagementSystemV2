@@ -19,6 +19,7 @@ namespace ProductManagementSystem.BuilderPattern
        
         public string id, name;
         public decimal price;
+        public int units = 0;
 
         public string ProductType = "Kilo Product";
         

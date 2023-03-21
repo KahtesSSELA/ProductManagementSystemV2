@@ -49,6 +49,7 @@
     <Compile Include="AdapterPattern\Adaptee.cs" />
     <Compile Include="AdapterPattern\Adapter.cs" />
     <Compile Include="AdapterPattern\ITarget.cs" />
+    <Compile Include="BridgePattern\Bridge.cs" />
     <Compile Include="BuilderPattern\IProductBuilder.cs" />
     <Compile Include="BuilderPattern\Manufacturer.cs" />
     <Compile Include="BuilderPattern\ProductBuild.cs" />
@@ -86,7 +87,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TemplateMethodPattern\Cart.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

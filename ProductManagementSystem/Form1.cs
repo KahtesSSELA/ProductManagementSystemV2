@@ -1,6 +1,5 @@
 ﻿using ProductManagementSystem.AdapterPattern;
 using ProductManagementSystem.BuilderPattern;
-using ProductManagementSystem.TemplateMethodPattern;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
